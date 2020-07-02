@@ -1,0 +1,155 @@
+// main: ../style.less
+
+.contact {
+    width: 100%;
+    padding: 120px 0;
+
+    background: url(../img/contact/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__form {
+    width: 100%;
+    max-width: 616px;
+    background-color: fade(#021623, 70%);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 33px;
+
+    input, textarea {
+        background: none;
+        border: none;
+
+        font-family: @ral;
+        font-size: 15px;
+        font-weight: 400;
+        color: @white;
+        border-bottom: 1px solid #707070;
+
+        &::placeholder {
+            color: #c1c6c9;
+        }
+    }
+
+    input {
+        height: 33px;
+        margin: 0 0 25px 0;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 109px;
+
+        margin: 0 0 38px 0;
+    }
+}
+
+.form__btn {
+    font-family: @mont;
+    font-weight: 400;
+    font-size: 18px;
+    color: @gray_black;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 2px;
+    background-color: #6EEEE4;
+    cursor: pointer;
+    padding: 16px 37px;
+
+    transition: color .2s linear, background-color .2s linear;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: #6EEEE4;
+        background-color: fade(@gray_black, 70%);
+    }
+}
+
+.contact__info {
+    width: 100%;
+    max-width: 500px;
+    background-color: fade(#021623, 70%);
+
+    padding: 32.7px 23px 19px 22px;
+}
+
+.contact__address, .contact__mail {
+    font-family: @ral;
+    font-weight: 400;
+    font-size: 15px;
+    color: #c1c6c9;
+    line-height: 1.6;
+}
+
+.contact__mail {
+    margin: 20px 0 23px 0;
+}
+
+.contact__map {
+    width: 100%;
+    max-width: 455px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Media
+===============================================*/
+
+@media (max-width: 1145px) {
+    .contact__form, .contact__info {
+        margin: 0 auto;
+    }
+
+    .contact__info {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .form__btn {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form__btn {
+        padding: 12px 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

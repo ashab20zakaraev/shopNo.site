@@ -1,0 +1,142 @@
+// main: ../style.less
+
+.says {
+    width: 100%;
+    padding: 112px 0;
+    background-color: @bg;
+}
+
+.says__inner {
+    width: 100%;
+    margin: 134px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.says__photo {
+    width: 50%;
+    max-width: 393px;
+}
+
+.says__item {
+    width: 100%;
+
+    position: relative;
+    z-index: 2;
+
+    &:after {
+        content: "";
+
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 0;
+        z-index: -1;
+
+        width: 393px;
+        height: 362px;
+        background-color: #EAEBED;
+        border-radius: 3px;
+    }
+}
+
+.says__img {
+    width: 100%;
+    max-width: 319px;
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    border-radius: 3px;
+    box-shadow: 4px 4px 15px #c3c4c5;
+
+    &:focus {
+        outline: none;
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+    }
+}
+
+.says__content {
+    width: 50%;
+    max-width: 666px;
+    min-width: 0;
+    margin: 24px 0 86px 0;
+    padding: 0 20px;
+
+    background-color: #EAEBED;
+    border-radius: 3px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.says__title {
+    font-family: 'Merriweather',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: @black;
+
+    span {
+        font-weight: 400;
+        font-size: 15px;
+        color: #787878;
+    }
+}
+
+.says__text {
+    max-width: 503px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: @black;
+    line-height: 1.7;
+
+    margin: 24px 0;
+}
+
+.says__rating {
+    .fas {
+        color: #F2DA3B;
+        font-size: 15px;
+    }
+}
+
+/* Media
+===============================================*/
+
+@media (max-width: 815px) {
+
+    .says__inner {
+        justify-content: center;
+    }
+
+    .says__photo {
+        width: 100%;
+    }
+
+    .says__content {
+        width: 100%;
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width: 410px) {
+    .says__item {
+
+        &:after {
+            display: none;
+        }
+    }
+}

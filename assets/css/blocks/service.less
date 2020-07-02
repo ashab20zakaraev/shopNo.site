@@ -1,0 +1,161 @@
+// main: ../style.less
+
+.service {
+    width: 100%;
+    padding: 114px 0 112px 0;
+    background-color: @bg;
+}
+
+.service_inner {
+    width: 100%;
+    margin: 120px 0 0 0;
+}
+
+.service__item {
+    position: relative;
+}
+
+.service__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 12px 0 ;
+}
+
+.big__photo, .small__photo {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+
+    background-color: #170D0D;
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        opacity: .4;
+    }
+}
+
+.big__photo {
+    max-width: 650px;
+}
+
+.small__photo {
+    max-width: 472px;
+}
+
+.service__content {
+    width: 100%;
+    max-width: 418px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 100;
+
+    transform: translate3d(0, -50%, 0);
+
+    margin: 0 0 0 64px;
+}
+
+.service_title {
+    font-family: @marri;
+    font-weight: 700;
+    font-size: 20px;
+    color: @white;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+}
+
+.service_text {
+    max-width: 418px;
+
+    font-family: @ral;
+    font-weight: 400;
+    font-size: 16px;
+    color: @white;
+    padding: 0 0 45px 0;
+}
+
+.service__btn {
+    font-family: @ral;
+    font-weight: 500;
+    font-size: 19px;
+    color: @white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color .1s linear;
+
+    &:hover {
+        color: @gray_black;
+    }
+
+    .btn__next {
+        width: 25px;
+        height: 16px;
+    }
+}
+
+/* Media
+===============================================*/
+
+@media (max-width: 1150px) {
+    .service__row {
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+    .service__item {
+        margin: 0 0 12px 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .service__content {
+        margin: 0 0 0 25px;
+    }
+
+    .service_text {
+        max-width: 355px;
+    }
+}
+
+@media (max-width: 450px) {
+    .service__content {
+        margin: 0 0 0 10px;
+    }
+
+    .service_text {
+        font-size: 14px;
+    }
+
+    .service_title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .service_text {
+        max-width: 288px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

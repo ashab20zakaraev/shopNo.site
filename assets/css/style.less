@@ -1,0 +1,117 @@
+// compress: true
+
+/* Переменные */
+@import "vars";
+
+body {
+    margin: 0;
+    font-family: @ral;
+    font-weight: 400;
+    font-size: 14px;
+    color: @gray_black;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+input, textarea {
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scroll-Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: @white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: @dark_gray;
+    border-radius: 10px;
+    border: 2px solid @white;
+    transition: border .2s linear;
+
+    &:hover {
+        border: 1px solid @white;
+    }
+}
+
+/* Blocks */
+
+/* Routine tuning */
+@import "blocks/container";
+@import "blocks/title_subtitle";
+
+/* ==== Site blocks ==== */
+
+/* -- Header -- */
+@import "blocks/header";
+
+/* -- Intro -- */
+@import "blocks/intro";
+
+/* -- About -- */
+@import "blocks/about";
+
+/* -- Work -- */
+@import "blocks/work";
+
+/* -- Service -- */
+@import "blocks/service";
+
+/* -- Team -- */
+@import "blocks/team";
+
+/* -- Says -- */
+@import "blocks/says";
+
+/* -- Clients -- */
+@import "blocks/clients";
+
+/* -- Contact -- */
+@import "blocks/contact";
+
+/* -- Footer -- */
+@import "blocks/footer";
+
+/* -- SLIDER -- */
+@import "blocks/slider";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
